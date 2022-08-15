@@ -1,0 +1,44 @@
+bool uniqueChar(string str)
+{
+    sort(str.begin(), str.end());
+    for (int i = 0; i < str.length()-1; i++) {
+        if (str[i] == str[i + 1]) {
+            return false;
+        }
+    }
+    return true;
+}
+bool isPerfectSquare(double x)
+{
+    if (x >= 0) {
+ 
+        long long s = sqrt(x);
+        return (s * s == x);
+    }
+    return false;
+}
+ll powerm(ll a,ll b,ll m) { //m-> mod
+    if(b==0) {
+        return 1;
+    }
+    ll res=powerm(a,b/2,m);
+    if(b%2) {
+        return ((res*res)%m*(a%m))%m;
+    }
+    return (res*res)%m;
+}
+ 
+//INVERSE -> a^(m-2) ...m -> prime
+ 
+int power(ll a,ll b) {
+    if(b==0) {
+        return 1;
+    }
+    ll res=power(a,b/2);
+    if(b%2==0) {
+        return res*res;
+    }
+    return res*res*a;
+}
+
+
