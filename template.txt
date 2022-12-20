@@ -14,6 +14,62 @@ long long n;
 return 0;
 }
 //////////////////////
+
+
+#include<bits/stdc++.h>
+using namespace std;
+#define fastio() ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL)
+#define MOD 1000000007
+#define pb push_back
+#define mp make_pair
+#define ff first
+#define ss second
+#define set_bits __builtin_popcountll
+#define all(x) (x).begin(), (x).end()
+typedef long long ll;
+typedef long double lld;
+#ifndef ONLINE_JUDGE
+#define de(x) cerr << #x <<" "; pr(x); cerr << endl;
+#else
+#define de(x)
+#endif
+
+void pr(ll t) {cerr << t;}
+void pr(int t) {cerr << t;}
+void pr(string t) {cerr << t;}
+void pr(char t) {cerr << t;}
+void pr(lld t) {cerr << t;}
+void pr(double t) {cerr << t;}
+
+template <class T, class V> void pr(pair <T, V> p);
+template <class T> void pr(vector <T> v);
+template <class T> void pr(set <T> v);
+template <class T, class V> void pr(map <T, V> v);
+template <class T> void pr(multiset <T> v);
+
+template <class T, class V> void pr(pair <T, V> p) {cerr << "{"; pr(p.ff); cerr << ","; pr(p.ss); cerr << "}";}
+template <class T> void pr(vector <T> v) {cerr << "[ "; for (T i : v) {pr(i); cerr << " ";} cerr << "]";}
+template <class T> void pr(set <T> v) {cerr << "[ "; for (T i : v) {pr(i); cerr << " ";} cerr << "]";}
+template <class T> void _print(multiset <T> v) {cerr << "[ "; for (T i : v) {pr(i); cerr << " ";} cerr << "]";}
+template <class T, class V> void pr(map <T, V> v) {cerr << "[ "; for (auto i : v) {pr(i); cerr << " ";} cerr << "]";}
+
+//The following code was written by Codeslayer7
+
+int main()
+{
+#ifndef ONLINE_JUDGE
+	freopen("input.txt", "r", stdin);
+	freopen("output.txt", "w", stdout);
+	freopen("error.txt", "w", stderr);
+#endif
+	vector<ll>a = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+	de(a);
+
+	return 0;
+}
+
+
+/////////////////////////////////////////////////////////////////
 Template for code
 //////////////////////
 #include<bits/stdc++.h>
