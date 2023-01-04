@@ -212,3 +212,17 @@ int power(ll a,ll b) {
     }
     return res*res*a;
 }
+ll ncr(ll n,ll r)
+{
+ll ans=1,y=1,x=n-r+1;
+for(int i=r+1;i<=n;i++)
+{
+	ans*=i;
+	if(y!=x)
+{
+	ans/=y;
+	y++;
+}
+}
+return ans;
+}
